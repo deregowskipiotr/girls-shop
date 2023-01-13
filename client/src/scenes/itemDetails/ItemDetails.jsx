@@ -45,10 +45,10 @@ const ItemDetails = () => {
   }, [itemId]); // eslint-disable-line react-hooks/exhaustive-deps
 
   return (
-    <Box width="80%" m="80px auto">
+    <Box width="80%" m="100px auto">
       <Box display="flex" flexWrap="wrap" columnGap="40px">
         {/* IMAGES */}
-        <Box flex="1 1 40%" mb="40px">
+        <Box flex="1 1 40%" mb="50px">
           <img
             alt={item?.name}
             width="100%"
@@ -98,7 +98,7 @@ const ItemDetails = () => {
                 minWidth: '150px',
                 padding: '10px 40px'
               }}
-              onClick={() => dispatch({item: {...item, count } })}
+              onClick={() => dispatch(addToCart({ item: {...item, count } }))}
             >
               ADD TO CART
             </Button>
