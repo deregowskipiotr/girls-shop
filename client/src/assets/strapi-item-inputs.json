@@ -1,0 +1,35 @@
+{
+  "version": 2,
+  "data": {
+    "api::item.item": {
+      "2": {
+        "id": 2,
+        "name": "flowerpot",
+        "shortDescription": "Donec sollicitudin molestie malesuada. Vivamus suscipit.",
+        "longDescription": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.\n",
+        "price": 15,
+        "category": "topRated",
+        "createdAt": "2022-10-17T17:17:21.884Z",
+        "updatedAt": "2022-10-17T17:17:23.404Z",
+        "publishedAt": "2022-10-17T17:17:23.402Z",
+        "image": 2,
+        "createdBy": null,
+        "updatedBy": null
+      },
+      "3": {
+        "id": 3,
+        "name": "picture",
+        "shortDescription": "Donec sollicitudin molestie malesuada. Vivamus suscipit.",
+        "longDescription": "Quisque velit nisi, pretium ut lacinia in, elementum id enim. Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.\n",
+        "price": 15,
+        "category": "topRated",
+        "createdAt": "2022-10-17T17:17:21.884Z",
+        "updatedAt": "2022-10-17T17:17:23.404Z",
+        "publishedAt": "2022-10-17T17:17:23.402Z",
+        "image": 2,
+        "createdBy": null,
+        "updatedBy": null
+      }
+    }
+  }    
+}

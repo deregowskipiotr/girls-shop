@@ -1,0 +1,9 @@
+[build]
+  command = "npm run build"
+  publish = "build"
+
+[dev]
+  command = "npm start"
+  environment = {
+    API_URL = "http://localhost:1337"
+  }

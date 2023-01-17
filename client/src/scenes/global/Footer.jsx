@@ -62,7 +62,7 @@ const Footer = () => {
           <Typography variant="h4" fontWeight="bold" mb="30px">
             Contact Us
           </Typography>
-          <Typography mb="30px">Warsaw, some adress</Typography>
+          <Typography mb="30px">Warsaw, some address</Typography>
           <Typography mb="30px">Email: something@gmail.com</Typography>
           <Typography mb="30px">mobile: 123 123 123</Typography>
         </Box>
