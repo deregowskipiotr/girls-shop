@@ -1,4 +1,6 @@
 'use strict';
+
+
 const stripe = require("stripe")(process.env.STRIPE_SECRET_KEY);
 
 /**
@@ -13,20 +15,22 @@ module.exports = createCoreController('api::order.order', ({ strapi }) => ({
 
     try {
       //retrieve item information
-      const lineItems = await Promise.all (
+      const lineItems = await Promise.all(
         products.map(async (product) => {
-          const item = await strapi.service("api::item.item").findOne(product.id);
+          const item = await strapi
+            .service("api::item.item")
+            .findOne(product.id);
 
           return {
             price_data: {
               currency: "usd",
               product_data: {
-                name: item.name
+                name: item.name,
               },
-              unit_amout: item.price * 100,
+              unit_amount: item.price * 100,
             },
             quantity: product.count,
-          }
+          };
         })
       );
 
@@ -35,9 +39,9 @@ module.exports = createCoreController('api::order.order', ({ strapi }) => ({
         payment_method_types: ["card"],
         customer_email: email,
         mode: "payment",
-        succes_url: "http://localhost:3000/checkout/succes",
+        succes_url: "http://localhost:3000/checkout/success",
         cancel_url: "http://localhost:3000",
-        line_items: lineItems
+        line_items: lineItems,
       });
 
       //create the item
