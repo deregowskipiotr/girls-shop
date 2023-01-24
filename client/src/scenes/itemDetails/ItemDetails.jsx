@@ -48,11 +48,11 @@ const ItemDetails = () => {
     <Box width="80%" m="100px auto">
       <Box display="flex" flexWrap="wrap" columnGap="40px">
         {/* IMAGES */}
-        <Box flex="1 1 40%" mb="50px">
+        <Box flex="1 1 30%" mb="50px">
           <img
             alt={item?.name}
             width="100%"
-            height="100%"
+            height="90%"
             src={`http://localhost:1337${item?.attributes?.image?.data?.attributes?.formats?.medium?.url}`}
             style={{ objectFit: "contain" }}
           />
